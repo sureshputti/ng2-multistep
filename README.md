@@ -1,6 +1,7 @@
 # angular2-multistep-form
 
 This app aims to demonstrate the creation multistep forms in Angular 2.
+Pull the project and install node package and then execute npm start to load the application
 
 ### Features
 
@@ -16,6 +17,7 @@ Start it as you would a normal ng2 app:
 npm install
 ````
 
+
 ````
-typings install
+npm start
 ````
