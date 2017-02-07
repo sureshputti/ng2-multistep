@@ -1,0 +1,28 @@
+
+<div class="multi-step-container">
+	<span>
+		
+		<a class="step-header-container" routerLink="/multistep/step1" routerLinkActive="active">
+			<!--<button  class="width-a"   [disabled]="stepIsFirstOrLast('backward')">
+			<span class="checkmark" >
+				<div class="checkmark_circle"></div>
+				<div class="checkmark_stem"></div>
+				<div class="checkmark_kick"></div>
+			</span></button>-->
+			Select Compaign settings
+		</a>
+	</span>
+	<span>
+		<a class="step-header-container" routerLink="/multistep/step2" routerLinkActive="active">create ad group</a>
+	</span>
+	<span>
+		<a class="step-header-container" routerLink="/multistep/step3" routerLinkActive="active">create ad</a>
+	</span>
+<hr>
+<router-outlet></router-outlet>
+<hr>
+<button class="btn btn-primary nav-button-back"  (click)="goToNextStep('backward')" [disabled]="stepIsFirstOrLast('backward')">BACK</button>
+<button  class="btn btn-primary nav-button-cancel" (click)="goToNextStep('cancel')" >CANCEL</button>
+<button  class="btn btn-primary nav-button-continue" (click)="goToNextStep('continue')" >CONTINUE</button> 
+
+</div>

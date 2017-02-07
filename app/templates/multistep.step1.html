@@ -1,0 +1,22 @@
+<h1 class="ui header">
+    STEP 1 
+   <div class="sub header">
+   </div>
+</h1>
+<form class="ui form" #form="ngForm" (ngSubmit)="onSubmit()"> 
+ <div class="form-group">
+    <label for="firstname">first name</label>
+    <input type="text" id="firstname" class="form-control"
+           required minlength="4" maxlength="24"
+           name="firstName" [(ngModel)]="model.firstName"
+           #firstName="ngModel" >
+    
+	<label for="lastname">last name</label>
+    <input type="text" id="lastname" class="form-control"
+           required minlength="4" maxlength="24"
+           name="lastName" [(ngModel)]="model.lastName"
+           #lastName="ngModel" >
+    
+
+  </div>
+</form>

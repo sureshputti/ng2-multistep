@@ -1,0 +1,22 @@
+<h1 class="ui header">
+  Details of person
+   <div class="sub header">
+   </div>
+</h1>
+<form class="ui form" #form="ngForm" (ngSubmit)="onSubmit()"> 
+	 <div class="form-group">
+    <label for="street">Street</label>
+    <input type="text" id="street" class="form-control"
+           required minlength="4" maxlength="24"
+           name="street" [(ngModel)]="model.street"
+           #street="ngModel" >
+    
+	 <label for="city">City</label>
+	 <input type="text" id="city" class="form-control"
+           required minlength="4" maxlength="24"
+           name="city" [(ngModel)]="model.city"
+           #city="ngModel" >
+    
+  </div>
+  
+</form>

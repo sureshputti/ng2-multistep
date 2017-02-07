@@ -1,0 +1,15 @@
+<h1 class="ui header">
+   STEP 3
+   <div class="sub header">
+   </div>
+</h1>
+<form class="ui form" #form="ngForm" (ngSubmit)="onSubmit()"> 
+  <div class="form-group">
+    <label for="name">Type</label>
+    <input type="text" id="name" class="form-control"
+           required minlength="4" maxlength="24"
+           name="name" [(ngModel)]="model.type"
+           #name="ngModel" >
+   
+  </div>
+</form>
